@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .section {
+        height: 1000px;
+        background-color: tomato;
+      }
+
+      #section-2 {
+        background-color: teal;
+      }
+      #section-3 {
+        background-color: lime;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- remote webpage -->
+
+    <a href="https://www.swiggy.com/">Go to Swiggy</a>
+
+    <!-- local webpage -->
+
+    <br />
+    <a href="img-tag-3-12.html">Go to img web page</a>
+
+    <!-- go to assets -->
+    <br /><a
+      href="https://images.pexels.com/photos/15065899/pexels-photo-15065899/free-photo-of-a-mountain-with-a-large-peak-and-a-blue-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      >Go to Image file</a
+    >
+
+    <!-- go to different section in same file -->
+
+    <br /><a href="#section-1">section-1</a>
+    <a href="#section-2">section-2</a>
+    <a href="#section-3">section-3</a>
+
+    <hr />
+
+    <div class="section" id="section-1">section-1</div>
+    <div class="section" id="section-2">section-2</div>
+    <div class="section" id="section-3">section-3</div>
+
+    <a
+      href="https://www.apple.com/in/store?afid=p238%7CsdUuvv563-dc_mtid_187079nc38483_pcrid_719882356459_pgrid_109516736379_pntwk_g_pchan__pexid__ptid_kwd-10778630_&cid=aos-IN-kwgo-brand--slid---product-"
+    >
+      <img
+        src="https://hips.hearstapps.com/hmg-prod/images/red-fresh-apple-isolated-on-white-background-royalty-free-image-1627314996.jpg"
+        alt=""
+        height="200"
+      />
+    </a>
+    <!-- targets -->
+    <!-- _self, it is applied by default, it opens external link in same tab -->
+    <!-- _blank, it opens external link in new tab -->
+    <a
+      href="https://www.apple.com/in/store?afid=p238%7CsdUuvv563-dc_mtid_187079nc38483_pcrid_719882356459_pgrid_109516736379_pntwk_g_pchan__pexid__ptid_kwd-10778630_&cid=aos-IN-kwgo-brand--slid---product-"
+      target="_blank"
+      >Go to apple site</a
+    >
+  </body>
+</html>
