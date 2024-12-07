@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="get" id="form_1">
+      <input
+        type="text"
+        name=""
+        id=""
+        value="something"
+        placeholder="Enter your name"
+        minlength="3"
+        maxlength="20"
+        readonly
+        disabled
+        required
+      />
+      <br />
+      <input
+        type="password"
+        name=""
+        id=""
+        pattern="^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$"
+        value="Some!2()sf"
+        placeholder="Enter your password"
+        required
+      />
+      <br />
+      <input
+        type="email"
+        name=""
+        id=""
+        value="something@gmail.com"
+        placeholder="Enter your email"
+        required
+      />
+      <br />
+      <input
+        type="number"
+        name=""
+        id=""
+        placeholder="Enter your age"
+        value="50"
+        min="10"
+        max="100"
+        required
+      />
+      <br />
+      <input type="date" name="" id="" min="2000-01-01" max="2025-01-01" />
+      <br />
+      <input type="time" name="" id="" />
+      <br />
+      <input type="datetime-local" name="" id="" />
+      <br />
+      <input type="search" name="" id="" placeholder="Search here" />
+      <br />
+      <input type="url" name="" id="" placeholder="Enter your link" />
+      <br />
+      <input type="file" name="" id="" accept=".pdf" />
+      <br />
+      <input type="color" name="" id="" />
+      <br />
+      <input type="month" name="" id="" />
+      <br />
+      <input type="range" name="" id="" step="10" min="20" max="80" />
+      <br />
+      <input type="tel" name="" id="" minlength="10" maxlength="10" required />
+      <br />
+
+      <fieldset>
+        <legend>Professional detail</legend>
+        <input type="week" name="" id="" />
+        <br />
+        <label for="coding">Coding</label>
+        <input type="checkbox" name="" id="coding" checked />
+        <label for="gaming">Gaming</label>
+        <input type="checkbox" name="" id="gaming" />
+
+        <br />
+        <label for="male" form="form_1">Male</label>
+        <input type="radio" name="gender" id="male" checked />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" />
+
+        <br />
+
+        <select name="" id="">
+          <option value="surat">Surat</option>
+          <option value="rajkot" selected>Rajkot</option>
+          <option value="ahmedabad">Ahmedabad</option>
+          <option value="mumbai" disabled>Mumbai</option>
+        </select>
+        <br />
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Enter your collage name"
+          list="collage-list"
+        />
+
+        <datalist id="collage-list">
+          <option value="GTU">GT University</option>
+          <option value="RK">RK University</option>
+          <option value="Atmiya">Atmiya University</option>
+          <option value="MU">Marwadi University</option>
+          <option value="VVP">VVP University</option>
+          <option value="DU">Darshan University</option>
+        </datalist>
+        <br />
+        <textarea
+          name=""
+          id=""
+          placeholder="Enter your feedback"
+          rows="5"
+          cols="15"
+        ></textarea>
+      </fieldset>
+      <br />
+      <input type="button" name="" id="" value="Go" />
+
+      <input type="submit" name="" id="" />
+      <input type="reset" name="" id="" />
+
+      <button>Close</button>
+    </form>
+
+    <!-- <script>
+      const range = document.querySelector('input[type="range"]');
+
+      range.addEventListener('change', () => {
+        console.log(range.value);
+      });
+    </script> -->
+  </body>
+</html>
