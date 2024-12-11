@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        width: fit-content;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 10px;
+      }
+
+      fieldset {
+        border-radius: 6px;
+      }
+      input {
+        margin-top: 10px;
+      }
+
+      input[type='submit'],
+      input[type='reset'] {
+        margin: 10px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name: </label>
+        <input
+          type="text"
+          name=""
+          id="name"
+          placeholder="Ex. Jay Shah"
+          minlength="3"
+          maxlength="50"
+          required
+        />
+        <br />
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name=""
+          id="email"
+          placeholder="Ex. example@gmail.com"
+          required
+        />
+        <br />
+        <label for="phone">Phone: </label>
+        <input
+          type="tel"
+          name=""
+          id="phone"
+          placeholder="Ex. 1234567890"
+          minlength="10"
+          maxlength="10"
+          required
+        />
+        <br />
+        <label for="dob">Date of Birth: </label>
+        <input type="date" name="" id="dob" min="1995-1-1" required />
+        <br />
+        <label for="">Gender:</label>
+        <label for="male">Male </label>
+        <input type="radio" name="gender" id="male" required />
+        <label for="female">Female </label>
+        <input type="radio" name="gender" id="female" required />
+        <br />
+        <label for="address">Address:</label>
+        <textarea
+          name=""
+          id="address"
+          placeholder="Ex. 2nd floor, near xyz building, xyz City, state."
+          required
+          minlength="5"
+        ></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Professional Information</legend>
+
+        <label for="edu">Education / Course (Latest): </label>
+        <input
+          type="text"
+          name=""
+          id="edu"
+          list="course-list"
+          placeholder="B.tech"
+          minlength="5"
+          required
+        />
+
+        <datalist id="course-list">
+          <option value="M.Tech">M.Tech</option>
+          <option value="B.Tech">B.Tech</option>
+          <option value="MCA">MCA</option>
+          <option value="B.sc IT">B.sc IT</option>
+          <option value="BCA">BCA</option>
+          <option value="Diploma in IT">Diploma in IT</option>
+          <option value="Other">Other</option>
+        </datalist>
+        <br />
+        <label for="clg">Collage / University: </label>
+        <input
+          type="text"
+          name=""
+          id="clg"
+          list="collage-list"
+          placeholder="Ex. xyz university"
+          required
+        />
+
+        <datalist id="collage-list">
+          <option value="GTU">GT University</option>
+          <option value="RK">RK University</option>
+          <option value="Atmiya">Atmiya University</option>
+          <option value="MU">Marwadi University</option>
+          <option value="VVP">VVP University</option>
+          <option value="DU">Darshan University</option>
+        </datalist>
+        <br />
+        <label for="position">Position Applied for: </label>
+        <input
+          type="text"
+          name=""
+          id="position"
+          placeholder="Ex. Senior web developer"
+          required
+        />
+        <br />
+        <label for="salary-range">Expected salary range: </label>
+        <input type="range" name="" id="salary-range" />
+        <br />
+        <label for="">Job Type: </label>
+        <label for="full">Full time: </label>
+        <input type="checkbox" name="type" id="full" />
+        <label for="part">Part time: </label>
+        <input type="checkbox" name="type" id="part" />
+        <label for="remote">Remote: </label>
+        <input type="checkbox" name="type" id="remote" />
+        <br />
+        <label for="exp">Has Work experience ?: </label>
+        <input type="checkbox" name="" id="exp" />
+        <br />
+        <label for="resume">Upload Resume: </label>
+        <input type="file" name="" id="resume" accept=".pdf" required />
+        <br />
+        <label for="desc">Tell us about yourself: </label>
+        <textarea
+          name=""
+          id="desc"
+          placeholder="Let us know about yourself"
+        ></textarea>
+        <br />
+        <input type="submit" name="" id="" />
+        <input type="reset" name="" id="" />
+      </fieldset>
+    </form>
+  </body>
+</html>
