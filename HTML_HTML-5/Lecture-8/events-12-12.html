@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 300px;
+        width: 300px;
+        background-color: tomato;
+        border-radius: 12px;
+        margin: 50px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="console.log('Button clicked')">Click me</button>
+    <button onclick="changeBgColor()">Change background color</button>
+
+    <p onmouseover="console.log('Mouse hovered')">Hover me</p>
+    <button ondblclick="console.log('Button double clicked')">
+      Double click me
+    </button>
+
+    <div class="box" onmousewheel="console.log('Mouse wheel Scrolling')"></div>
+
+    <input
+      type="text"
+      onfocus="console.log('Input focuses')"
+      placeholder="Input focus"
+    />
+
+    <input
+      type="text"
+      name=""
+      id=""
+      onchange="console.log('Input changed') 
+    "
+      placeholder="Input change"
+    />
+    <script>
+      function changeBgColor() {
+        document.body.style.backgroundColor = '#24252e';
+      }
+    </script>
+  </body>
+</html>
