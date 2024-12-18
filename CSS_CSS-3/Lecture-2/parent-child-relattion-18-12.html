@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .parent {
+        /* example property that inherits */
+
+        color: orange;
+        font-size: 32px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+
+        /* example property that don't inherits */
+        border: 1px solid red;
+        background-color: sky blue;
+      }
+      .child {
+        /* color: purple; */
+        /* color: inherit; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- vs code emmet shortcuts -->
+
+    <!--  art =>  <article></article> -->
+
+    <!-- .some => <div class="some"></div> -->
+
+    <!-- #special =>  <div id="special"></div> -->
+
+    <!-- p.para => <p class="para"></p> -->
+
+    <!-- .para.some => <div class="para some"></div> -->
+
+    <!-- p.para.some =>  <p class="para some"></p> -->
+
+    <!-- p.para{This is some content} =>  <p class="para">This is some content</p> -->
+
+    <!--p.parent#some{content} =>  <p class="parent" id="some">content</p> -->
+
+    <!-- ------------------ -->
+
+    <div class="parent">
+      Parent
+      <div class="child">Child1</div>
+      <div class="child">Child2</div>
+      <div class="child">Child3</div>
+      <div class="child">
+        Child4
+        <div class="sub-child">sub-child</div>
+        <div class="sub-child">sub-child</div>
+      </div>
+      <div class="child">Child5</div>
+    </div>
+  </body>
+</html>

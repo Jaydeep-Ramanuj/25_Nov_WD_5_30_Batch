@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* tag / type selector */
+
+      p {
+        color: red;
+      }
+
+      /* class selector, it is used to give common style to elements,
+      -  a class can be used in multiple elements as well as an element can have multiple classes as well */
+      /* - to use class selector we need to add . before class name */
+
+      .title {
+        font-size: 32px;
+      }
+      .bold {
+        font-weight: bolder;
+      }
+
+      /* id selector, it is used to uniquely identify an element */
+      /* - an element can't have more than one id */
+      /* we can't give same id in more that one element */
+      /* we use # before id selector */
+
+      #special {
+        border: 2px solid black;
+      }
+
+      /* universal selector, to select all elements */
+
+      * {
+        text-decoration: underline;
+      }
+
+      /* group selector, it is used to share common style between multiple selectors */
+
+      i,
+      b,
+      .title {
+        color: yellowgreen;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="title bold">This is first p tag</p>
+    <p id="special">This is second p tag</p>
+    <p class="title">This is third p tag</p>
+    <i>This is i tag</i>
+    <b>This is b tag</b>
+  </body>
+</html>
