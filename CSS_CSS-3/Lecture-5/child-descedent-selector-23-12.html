@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        border: 2px solid black;
+        padding: 10px;
+      }
+      /* .child {
+              border: 1px solid red;
+              padding: 10px;
+            } */
+
+      /* descendent selector (space), it will select element from all level's its own children as well as children of children */
+
+      .parent .child {
+        border: 1px solid red;
+        padding: 10px;
+      }
+
+      /* child selector (>), it only select parent's own child */
+
+      /* .parent > .child {
+              border-color: blue;
+            } */
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        child1
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">
+          sub-child2
+          <div class="child">Child class in sub-child</div>
+        </div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+      <div class="child">
+        child2
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+      <div class="child">
+        child3
+        <div class="sub-child">sub-child1</div>
+        <div class="sub-child">sub-child2</div>
+        <div class="sub-child">sub-child3</div>
+      </div>
+    </div>
+
+    <div class="child">This child is outside parent</div>
+  </body>
+</html>

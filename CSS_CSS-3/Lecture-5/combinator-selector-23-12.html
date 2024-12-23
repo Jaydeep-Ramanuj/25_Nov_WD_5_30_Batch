@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* combinator selector (no space),here we combine more than one selectors to select an element */
+
+      p.some {
+        color: red;
+      }
+      p.some.thing {
+        color: blue;
+      }
+
+      p.some.thing#special {
+        color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <p>This is p tag</p>
+    <p class="some">This is p tag with some class</p>
+    <p class="some thing">This is p tag with some class</p>
+    <p class="some thing" id="special">This is p tag with some class</p>
+    <div class="some">This is some class</div>
+  </body>
+</html>

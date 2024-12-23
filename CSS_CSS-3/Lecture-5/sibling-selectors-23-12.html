@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* adjacent sibling selector (+), it selects directly next element from specified element  */
+
+      #special + .child {
+        color: red;
+      }
+
+      /* general sibling selector (~), it selects all next elements from specified element  */
+
+      /* #special ~ .child {
+        color: red;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">child1</div>
+      <div class="child">child2</div>
+      <div class="child" id="special">child3</div>
+      <!-- <h1>This is h1 tag</h1> -->
+      <div class="child">child4</div>
+      <div class="child">child5</div>
+      <div class="child">child7</div>
+      <div class="child">child6</div>
+    </div>
+  </body>
+</html>
