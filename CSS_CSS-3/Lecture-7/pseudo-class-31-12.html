@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 300px;
+        width: 300px;
+        /* background-color: tomato; */
+        border-radius: 12px;
+        margin: 50px auto;
+        transition: all 300ms;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+
+      .box:hover {
+        /* background-color: teal; */
+        transform: translateY(-20px);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+          rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+      }
+
+      input:focus {
+        outline-color: blue;
+        width: 300px;
+      }
+
+      button:active {
+        /* background-color: blue; */
+        scale: 0.9;
+        /* scale: 1.2; */
+      }
+
+      a:active {
+        color: orange;
+      }
+      a:visited {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <input type="text" name="" id="" placeholder="Enter your name" />
+    <button>Click me</button>
+    <a href="https://getcssscan.com/css-box-shadow-examples">Go to CSS scan</a>
+  </body>
+</html>
