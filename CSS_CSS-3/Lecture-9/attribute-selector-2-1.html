@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* input[type] {
+        background-color: tomato;
+      } */
+      input[type='text'] {
+        background-color: tomato;
+      }
+
+      .item {
+        padding: 5px 15px;
+        border-radius: 6px;
+        background-color: teal;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 10px;
+        width: fit-content;
+      }
+
+      /* select all elements if provided attribute exists */
+      /* .item[data-custom-attr] {
+        background-color: tomato;
+      } */
+
+      /* select all elements if provided attribute has provided value */
+
+      /* .item[data-custom-attr='some'] {
+        background-color: tomato;
+      } */
+
+      /* select all elements if provided attribute has hyphen separated provided value */
+
+      /* .item[data-custom-attr|='some'] {
+        background-color: tomato;
+      } */
+
+      /* select all elements if provided attribute has space separated provided value */
+
+      /* .item[data-custom-attr~='some'] {
+        background-color: tomato;
+      } */
+
+      /* select all elements if provided attribute ends with provided value */
+
+      /* .item[data-custom-attr$='some'] {
+        background-color: tomato;
+      } */
+
+      /* select all elements if provided attribute stars with provided value */
+
+      /* .item[data-custom-attr^='some'] {
+        background-color: tomato;
+      } */
+
+      /* select all elements if provided attribute included provided value */
+
+      .item[data-custom-attr*='me-'] {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" name="" id="" placeholder="Enter your name" />
+    <input type="email" name="" id="" placeholder="Enter your email" />
+    <input name="" id="" placeholder="Enter your ..." />
+
+    <hr />
+    <div class="item">No-attr</div>
+    <div class="item" data-custom-attr="">No-value</div>
+    <div class="item" data-custom-attr="some">some</div>
+    <div class="item" data-custom-attr="some thing">some thing</div>
+    <div class="item" data-custom-attr="thing">thing</div>
+    <div class="item" data-custom-attr="thing some">thing some</div>
+    <div class="item" data-custom-attr="some-thing">some-thing</div>
+    <div class="item" data-custom-attr="ome-thing">ome-thing</div>
+    <div class="item" data-custom-attr="thing so">thing so</div>
+    <div class="item" data-custom-attr="something">something</div>
+  </body>
+</html>
