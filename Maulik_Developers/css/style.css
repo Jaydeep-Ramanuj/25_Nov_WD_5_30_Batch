@@ -461,7 +461,172 @@ header .btn {
 }
 
 #case-studies-section .case-studies .case-study .wrapper span {
-  /* text-align: end; */
-  align-self: flex-end;
+  text-align: end;
+  /* align-self: flex-end; */
   font-weight: 600;
+}
+
+/* #dev-approach-section */
+
+#dev-approach-section {
+}
+
+#dev-approach-section .section-heading {
+  font-size: 24px;
+}
+#dev-approach-section .approach-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#dev-approach-section .approach-cards .approach-card {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: var(--bg-secondary-color);
+  border: 1px solid #e5d6eb;
+  max-width: 45%;
+  min-width: 400px;
+
+  transition: all 300ms;
+}
+
+#dev-approach-section .approach-cards .approach-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+#dev-approach-section .approach-cards .approach-card h5 {
+  margin-top: 5px;
+  font-weight: 400;
+}
+
+#dev-approach-section .img-wrapper {
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #2b2b31;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #tech-stack-section */
+
+#tech-stack-section {
+}
+
+#tech-stack-section .section-heading {
+  font-size: 24px;
+}
+
+#tech-stack-section .stacks {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+#tech-stack-section .stacks li {
+  list-style: none;
+  font-weight: 600;
+  position: relative;
+}
+
+#tech-stack-section .stacks li::before {
+  content: '';
+  width: 0;
+  height: 3px;
+  background-image: var(--gradient);
+  border-radius: 8px;
+
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: 1;
+
+  transition: all 300ms;
+}
+
+#tech-stack-section .stacks li:hover {
+  background-image: var(--gradient);
+  background-clip: text;
+  color: transparent;
+}
+#tech-stack-section .stacks li:nth-child(1)::before {
+  width: 100%;
+}
+
+#tech-stack-section .stacks li:hover::before {
+  width: 100%;
+}
+
+#tech-stack-section .tools {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 80px;
+  justify-content: center;
+}
+
+#tech-stack-section .tools img {
+  filter: grayscale();
+}
+#tech-stack-section .tools img:hover {
+  filter: grayscale(0%);
+}
+
+/* #featured-section */
+#featured-section {
+  padding: 0;
+}
+
+#featured-section .section-heading {
+  font-size: 24px;
+}
+
+#featured-section .feature-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  overflow-y: visible;
+  scrollbar-width: none;
+  gap: 80px;
+}
+
+#featured-section .feature-cards .feature-card {
+  max-width: 300px;
+  min-width: 250px;
+  transition: all 300ms;
+}
+
+#featured-section .feature-cards .feature-card img {
+  width: 100%;
+}
+
+#featured-section .feature-cards .feature-card .content {
+  padding: 10px;
+  margin-top: 20px;
+}
+#featured-section .feature-cards .feature-card h4 {
+  line-height: 25px;
+}
+
+#featured-section .feature-cards .feature-card span {
+  margin-top: 5px;
+  display: block;
+  text-align: end;
+  color: var(--special-color);
+  font-weight: 600;
+}
+
+#featured-section .feature-cards .feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
