@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* @keyframes l12 {
+        0% {
+          background-position: calc(0 * 100% / 5) 100%, calc(1 * 100% / 5) 0%,
+            calc(2 * 100% / 5) 100%, calc(3 * 100% / 5) 0%,
+            calc(4 * 100% / 5) 100%, calc(5 * 100% / 5) 0%;
+        }
+        16.67% {
+          background-position: calc(0 * 100% / 5) 0%, calc(1 * 100% / 5) 0%,
+            calc(2 * 100% / 5) 100%, calc(3 * 100% / 5) 0%,
+            calc(4 * 100% / 5) 100%, calc(5 * 100% / 5) 0%;
+        }
+        33.33% {
+          background-position: calc(0 * 100% / 5) 0%, calc(1 * 100% / 5) 100%,
+            calc(2 * 100% / 5) 100%, calc(3 * 100% / 5) 0%,
+            calc(4 * 100% / 5) 100%, calc(5 * 100% / 5) 0%;
+        }
+        50% {
+          background-position: calc(0 * 100% / 5) 0%, calc(1 * 100% / 5) 100%,
+            calc(2 * 100% / 5) 0%, calc(3 * 100% / 5) 0%,
+            calc(4 * 100% / 5) 100%, calc(5 * 100% / 5) 0%;
+        }
+        66.67% {
+          background-position: calc(0 * 100% / 5) 0%, calc(1 * 100% / 5) 100%,
+            calc(2 * 100% / 5) 0%, calc(3 * 100% / 5) 100%,
+            calc(4 * 100% / 5) 100%, calc(5 * 100% / 5) 0%;
+        }
+        83.33% {
+          background-position: calc(0 * 100% / 5) 0%, calc(1 * 100% / 5) 100%,
+            calc(2 * 100% / 5) 0%, calc(3 * 100% / 5) 100%,
+            calc(4 * 100% / 5) 0%, calc(5 * 100% / 5) 0%;
+        }
+        100% {
+          background-position: calc(0 * 100% / 5) 0%, calc(1 * 100% / 5) 100%,
+            calc(2 * 100% / 5) 0%, calc(3 * 100% / 5) 100%,
+            calc(4 * 100% / 5) 0%, calc(5 * 100% / 5) 100%;
+        } 
+    }
+            */
+
+      .loader {
+        width: 120px;
+        height: 60px;
+        border-radius: 200px 200px 0 0;
+        -webkit-mask: repeating-radial-gradient(
+          farthest-side at bottom,
+          #0000 0,
+          #000 1px 12%,
+          #0000 calc(12% + 1px) 20%
+        );
+        background: radial-gradient(
+            farthest-side at bottom,
+            #514b82 0 95%,
+            #0000 0
+          )
+          bottom/0% 0% no-repeat #ddd;
+        animation: l10 2s infinite steps(6);
+      }
+      @keyframes l10 {
+        100% {
+          background-size: 120% 120%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+  </body>
+</html>

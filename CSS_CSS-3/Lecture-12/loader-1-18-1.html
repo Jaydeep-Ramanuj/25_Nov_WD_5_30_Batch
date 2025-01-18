@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .loader {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        /* border: 10px solid transparent; */
+        border: 10px solid #24252e4e;
+        border-top: 10px solid #24252e;
+        margin: 50px auto;
+
+        animation-name: rotate-loader;
+        animation-duration: 3000ms;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes rotate-loader {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader"></div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 300px;
+        width: 300px;
+        background-color: tomato;
+        border-radius: 12px;
+        margin: 50px auto;
+
+        animation-duration: 300ms;
+        animation-iteration-count: 1;
+      }
+
+      .wrapper:hover .box {
+        /* animation-name: flip-vertical-fwd; */
+        animation: flip-vertical-fwd 0.4s
+          cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+      }
+      @-webkit-keyframes flip-vertical-fwd {
+        0% {
+          -webkit-transform: translateZ(0) rotateY(0);
+          transform: translateZ(0) rotateY(0);
+        }
+        100% {
+          -webkit-transform: translateZ(160px) rotateY(180deg);
+          transform: translateZ(160px) rotateY(180deg);
+        }
+      }
+      @keyframes flip-vertical-fwd {
+        0% {
+          -webkit-transform: translateZ(0) rotateY(0);
+          transform: translateZ(0) rotateY(0);
+        }
+        100% {
+          -webkit-transform: perspective(400px) translateZ(50px) rotateY(180deg);
+          transform: perspective(400px) translateZ(50px) rotateY(180deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
