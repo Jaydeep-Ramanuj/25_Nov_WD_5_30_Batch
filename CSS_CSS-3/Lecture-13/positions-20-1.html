@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        width: 1000px;
+        height: 500px;
+        margin: 50px;
+        background-color: beige;
+
+        display: flex;
+
+        position: relative;
+      }
+
+      /* Position, it is used to give specific position to an element which may or may not be in normal document flow */
+
+      /* Offset, move an element from it original position */
+      /* top, move from top
+      left, move from left
+
+      bottom, move from bottom
+      right, move from right  */
+
+      /* Position types */
+
+      /* 1. Static, default position it means it will behave normally, we can't give offset to it */
+      /* 2. Fixed, It is fixed at specific position related to viewport, it won't occupy space, it will take offset from viewport */
+      /* 3. sticky, It is like fixed but it won't go outside its parent, it will remember it original space, it will take offset from viewport */
+      /* 4. Relative, It will take offset from its original position, it will remember it original space   */
+      /* 5. Absolute, It will be free to position at any location, it will be removed from normal document flow, it will take offset from its nearest positioned parent */
+
+      .child {
+        height: 100px;
+        width: 100px;
+        background-color: tomato;
+        border-radius: 12px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 24px;
+        color: white;
+        font-weight: 600;
+
+        border: 2px solid black;
+      }
+
+      .child:nth-child(5) {
+        background-color: yellowgreen;
+
+        position: fixed;
+        /* top: 100px; */
+        bottom: 100px;
+        /* left: 100px; */
+        right: 100px;
+      }
+
+      .spacer {
+        height: 1500px;
+        background-color: lightgrey;
+      }
+
+      .child:nth-child(1) {
+        background-color: violet;
+        position: sticky;
+        top: 100px;
+        left: 400px;
+      }
+
+      .child:nth-child(2) {
+        background-color: teal;
+        position: relative;
+        top: 100px;
+        left: 50px;
+
+        z-index: 3;
+      }
+
+      .child:nth-child(3) {
+        background-color: springgreen;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">1 sticky</div>
+      <div class="child">2 relative</div>
+      <div class="child">3 absolute</div>
+      <div class="child">4</div>
+      <div class="child">5 fixed</div>
+    </div>
+
+    <div class="spacer"></div>
+  </body>
+</html>
