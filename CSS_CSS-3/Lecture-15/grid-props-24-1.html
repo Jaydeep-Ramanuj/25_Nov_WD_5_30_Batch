@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        display: grid;
+        margin: 50px auto;
+        height: 800px;
+        width: 800px;
+        background-color: wheat;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 100px 300px 100px;
+
+        justify-content: start;
+        justify-items: center;
+        justify-items: center;
+
+        align-items: end;
+        align-content: center;
+
+        place-content: end start;
+        /* place-items: center end; */
+      }
+
+      .child {
+        height: 80px;
+        width: 80px;
+
+        /* height: 100%;
+        width: 100%; */
+        background-color: teal;
+        border: 1px solid black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: white;
+      }
+
+      .child:nth-child(4) {
+        /* font-size: 64px; */
+        width: 150px;
+      }
+      .child:nth-child(5) {
+        /* font-size: 64px; */
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+      <div class="child">6</div>
+      <div class="child">7</div>
+      <div class="child">8</div>
+      <div class="child">9</div>
+    </div>
+  </body>
+</html>

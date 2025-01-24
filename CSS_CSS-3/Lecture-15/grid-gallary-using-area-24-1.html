@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .gallary {
+        display: grid;
+
+        grid-template-areas:
+          'a b c c'
+          'a d d e'
+          'f d d g'
+          'h h i g';
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      img:nth-child(1) {
+        grid-area: a;
+      }
+      img:nth-child(2) {
+        grid-area: b;
+      }
+      img:nth-child(3) {
+        grid-area: c;
+      }
+      img:nth-child(4) {
+        grid-area: d;
+      }
+      img:nth-child(5) {
+        grid-area: e;
+      }
+      img:nth-child(6) {
+        grid-area: f;
+      }
+      img:nth-child(7) {
+        grid-area: g;
+      }
+      img:nth-child(8) {
+        grid-area: h;
+      }
+      img:nth-child(9) {
+        grid-area: i;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallary">
+      <img
+        src="https://images.pexels.com/photos/1034832/pexels-photo-1034832.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt=""
+      />
+
+      <img
+        src="https://images.pexels.com/photos/3687957/pexels-photo-3687957.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt=""
+      />
+
+      <img
+        src="https://images.pexels.com/photos/57416/cat-sweet-kitty-animals-57416.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt=""
+      />
+
+      <img
+        src="https://images.pexels.com/photos/127028/pexels-photo-127028.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt=""
+      />
+
+      <img
+        src="https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt=""
+      />
+      <img
+        src="https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt=""
+      />
+
+      <img
+        src="https://images.pexels.com/photos/1314550/pexels-photo-1314550.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt=""
+      />
+
+      <img
+        src="https://images.pexels.com/photos/1643456/pexels-photo-1643456.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt=""
+      />
+
+      <img
+        src="https://images.pexels.com/photos/177809/pexels-photo-177809.jpeg?auto=compress&cs=tinysrgb&w=600"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
