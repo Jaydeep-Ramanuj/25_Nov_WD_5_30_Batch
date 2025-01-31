@@ -1,0 +1,37 @@
+@media (min-width: 768px) {
+  :root {
+    --section-padding: 0 80px;
+  }
+
+  #hero-section > img {
+    width: 40%;
+    object-fit: cover;
+  }
+
+  #case-studies-section .case-studies .case-study img {
+    max-width: 350px;
+  }
+
+  #trust-section .content {
+    max-width: 50%;
+  }
+
+  #trust-section .img-wrapper {
+    max-width: 50%;
+  }
+
+  #testimonials-section .testimonials-list .review {
+    width: 70%;
+  }
+
+  #testimonials-section .testimonials-list .reviewers .reviewer:nth-child(2),
+  #testimonials-section .testimonials-list .reviewers .reviewer:nth-child(3),
+  #testimonials-section .testimonials-list .reviewers .reviewer:nth-child(4) {
+    display: block;
+  }
+
+  #case-studies-section .case-studies .case-study .wrapper {
+    max-width: 40%;
+    object-fit: cover;
+  }
+}

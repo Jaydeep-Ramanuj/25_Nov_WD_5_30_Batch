@@ -1,0 +1,31 @@
+@media (min-width: 600px) {
+  :root {
+    --section-padding: 0 50px;
+  }
+
+  #hero-section .content {
+    max-width: 50%;
+  }
+
+  #trust-section .section-heading {
+    margin-left: 0;
+  }
+
+  #case-studies-section .case-studies .case-study img {
+    max-width: 250px;
+    /* object-fit: cover; */
+    margin: 0 auto;
+  }
+  #case-studies-section .case-studies .case-study {
+    justify-content: space-between;
+  }
+
+  #case-studies-section .case-studies .case-study .wrapper {
+    /* max-width: 45%; */
+  }
+
+  #dev-approach-section .approach-cards .approach-card {
+    max-width: 45%;
+    flex-wrap: wrap;
+  }
+}

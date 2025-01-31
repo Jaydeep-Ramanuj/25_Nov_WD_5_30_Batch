@@ -1,0 +1,6 @@
+@media (min-width: 400px) {
+  #hero-section > img {
+    width: auto;
+    max-height: 200px;
+  }
+}

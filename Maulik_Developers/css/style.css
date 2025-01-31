@@ -26,6 +26,9 @@ body {
   --text-primary-color: #151925;
   --text-secondary-color: #717c94;
 
+  /* --font-size-primary:
+  --font-size-secondary: */
+
   --gradient: linear-gradient(
     to right,
     var(--gradient-color-1),
@@ -139,6 +142,7 @@ header .logo img {
 
 header label i {
   font-size: 24px;
+  cursor: pointer;
 }
 
 header #toggle {
@@ -151,10 +155,14 @@ header #toggle:checked + .nav-wrapper {
   right: 0;
 }
 
-header #toggle:checked + .nav-wrapper label {
+.nav-wrapper label {
   position: absolute;
   top: 20px;
   right: 20px;
+  cursor: pointer;
+}
+
+header #toggle:checked + .nav-wrapper label {
   color: white;
 }
 
@@ -205,16 +213,20 @@ header .btn {
 
 #hero-section > img {
   /* width: 40%; */
+  display: block;
+  margin: 0 auto;
   width: 100%;
 }
 
 #hero-section .content {
   /* max-width: 50%; */
+  flex-grow: 1;
 }
 
 #hero-section .content h2 {
   /* max-width: 78%; */
-  font-size: 48px;
+  /* font-size: 48px; */
+  font-size: 36px;
   font-weight: 300;
   color: var(--text-primary-color);
 }
@@ -311,8 +323,9 @@ header .btn {
 }
 #trust-section .content .section-heading,
 #partners-section .section-heading {
-  margin-left: 0;
-  font-size: 36px;
+  /* margin-left: 0; */
+  /* font-size: 36px; */
+  font-size: 28px;
   text-align: start;
 }
 
