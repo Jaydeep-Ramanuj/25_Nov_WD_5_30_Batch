@@ -1,0 +1,61 @@
+@media (min-width: 992px) {
+  :root {
+    --section-padding: 0 100px;
+    --text-primary-color: #151925;
+    --text-secondary-color: #717c94;
+  }
+
+  header .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    visibility: visible;
+    background-image: none;
+    justify-content: center;
+  }
+
+  header label {
+    display: none;
+  }
+
+  header .nav-wrapper nav a {
+    color: var(--text-secondary-color);
+    font-size: 16px;
+    margin-right: 0;
+  }
+
+  header .nav-wrapper nav {
+    flex-direction: row;
+    margin-left: auto;
+  }
+
+  header .btn {
+    margin-top: 0;
+    margin-left: auto;
+  }
+
+  #hero-section > img {
+    max-height: none;
+  }
+
+  #hero-section .content h2 {
+    font-size: 48px;
+    max-width: 78%;
+  }
+
+  #case-studies-section .case-studies .case-study {
+    max-width: none;
+    margin-inline: auto;
+  }
+
+  #case-studies-section .case-studies .case-study .wrapper {
+    max-width: 45%;
+  }
+  #case-studies-section .case-studies .case-study img {
+    object-fit: contain;
+  }
+
+  #cta-section h2 {
+    width: 50%;
+  }
+}

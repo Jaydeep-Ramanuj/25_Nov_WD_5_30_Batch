@@ -30,8 +30,14 @@
     display: block;
   }
 
-  #case-studies-section .case-studies .case-study .wrapper {
-    max-width: 40%;
-    object-fit: cover;
+  #case-studies-section .case-studies .case-study {
+    max-width: 70%;
+    margin-inline: auto;
+  }
+
+  #cta-section h2 {
+    text-align: center;
+    margin: 20px auto;
+    width: 65%;
   }
 }

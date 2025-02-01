@@ -1,0 +1,45 @@
+@media (min-width: 1200px) {
+  #hero-section {
+    height: 80vh;
+    justify-content: space-around;
+    padding-right: 150px;
+    padding-left: 150px;
+  }
+  #hero-section .content {
+    width: fit-content;
+  }
+
+  #hero-section .content p {
+    max-width: 78%;
+  }
+  header .nav-wrapper nav a {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+  #testimonials-section .testimonials-list .reviewers .reviewer {
+    display: block;
+  }
+
+  #case-studies-section .case-studies .case-study {
+    max-width: none;
+    justify-content: space-between;
+  }
+
+  #case-studies-section .case-studies .case-study img {
+    max-width: 50%;
+    object-fit: cover;
+    margin: 0;
+  }
+  #case-studies-section .case-studies .case-study .wrapper {
+    width: 50%;
+  }
+
+  #dev-approach-section .approach-cards .approach-card {
+    flex-wrap: nowrap;
+  }
+
+  footer .footer-top .contact {
+    width: auto;
+  }
+}
